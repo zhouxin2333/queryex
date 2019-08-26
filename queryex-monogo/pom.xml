@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.zx</groupId>
+        <artifactId>queryex</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>org.zx</groupId>
+    <artifactId>queryex-monogo</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <name>queryex-monogo</name>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.zx</groupId>
+            <artifactId>queryex-base</artifactId>
+            <version>0.1-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
