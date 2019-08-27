@@ -32,7 +32,7 @@ public abstract class QEAbstractMatcherFieldHandler<T, R> implements QEMatcherFi
 
     private boolean filterResolve(QEMatcherTypeResolve<R> resolve) {
         Class<?> handleResolveGenericClass = ResolvableType.forClass(this.getClass()).getSuperType().getGeneric(1).resolve();
-        Class<?> resolveGenericClass = ResolvableType.forClass(resolve.getClass()).getSuperType().getGeneric(0).resolve();
+        Class<?> resolveGenericClass = ResolvableType.forClass(resolve.getClass()).getSuperType().getInterfaces()[0].getGeneric(0).resolve();
         return handleResolveGenericClass.equals(resolveGenericClass);
     }
 }
